@@ -6,10 +6,17 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1 class="title">Discrete Math Evaluation Survey</h1>
-        <p class="description">Thank you very much for attending Discrete Math this year, as your
+        <h1 id="title">Discrete Math Evaluation Survey</h1>
+        <p id="description">Thank you very much for attending Discrete Math this year, as your
             professor. A survey is greatly appreciated for improvements
             in the future.
         </p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name">First Name: <input type="text" id="name" required></label>
+                <label for="studnum">Student Number: <input type="number" id="num" 
+                    minlength ="8" maxlength ="8" required></label>
+            </fieldset>
+        </form>
     </body>
 </html>
